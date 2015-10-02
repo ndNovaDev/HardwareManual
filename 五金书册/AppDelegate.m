@@ -22,7 +22,7 @@
     [window makeKeyAndVisible];
     self.window = window;
     
-    // Override point for customization after application launch.
+    [[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
     return YES;
 }
 

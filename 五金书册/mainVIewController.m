@@ -11,6 +11,7 @@
 #import "testTableViewController.h"
 #import <sqlite3.h>
 #import "miduModel.h"
+#import "lengthTableViewController.h"
 
 @interface mainVIewController()<UITableViewDataSource,UISearchBarDelegate,UIScrollViewDelegate>
 @property (nonatomic,strong)UIView *indexView;
@@ -21,6 +22,8 @@
 @property (nonatomic, assign) sqlite3 *db;
 @property (nonatomic,strong)NSMutableArray *midus;
 @property (nonatomic,strong)UIView *descView;
+@property (nonatomic,assign)BOOL searchTextEmpty;
+@property (nonatomic,assign)CGFloat down;
 @end
 @implementation mainVIewController
 -(NSMutableArray *)midus{
@@ -31,6 +34,8 @@
 }
 -(void)viewDidLoad{
     [super viewDidLoad];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:nil action:nil];
+    self.searchTextEmpty = YES;
     UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width * 0.5, 44)];
     titleView.center = CGPointMake(self.view.frame.size.width * 0.5, 44);
     
@@ -98,7 +103,7 @@
     secondView.dataSource = self;
     self.secondView = secondView;
     [self.contentView addSubview:secondView];
-
+    
 //    *********************
     UIView *naviBarBackgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 64)];
     naviBarBackgroundView.backgroundColor = [UIColor whiteColor];
@@ -116,10 +121,22 @@
     
     [self setupDb];
     [self setupData];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardChangeFrame:) name:UIKeyboardWillChangeFrameNotification object:nil];
+    
 }
-
+-(void)keyboardChangeFrame:(NSNotification *)notification{
+    CGRect keyboardRect = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    
+    [UIView  animateWithDuration:0.25 animations:^{
+        self.secondView.frame =  CGRectMake(0,54,self.view.frame.size.width, self.contentView.frame.size.height - 54 - self.down  - [UIScreen mainScreen].bounds.size.height + keyboardRect.origin.y);
+    }];
+}
 -(void)oneClick{
     [UIView animateWithDuration:0.3 animations:^{
+        self.searchBar.text = @"";
+        [self searchBar:self.searchBar textDidChange:@""];
+        [self.searchBar endEditing:YES];
         self.indexView.frame = CGRectMake(0, self.indexView.frame.origin.y, self.indexView.frame.size.width, self.indexView.frame.size.height);
         self.firstView.transform = CGAffineTransformMakeTranslation(0, 0);
         self.contentView.transform = CGAffineTransformMakeTranslation(0, 0);
@@ -132,30 +149,52 @@
         self.indexView.frame = CGRectMake(self.indexView.frame.size.width, self.indexView.frame.origin.y, self.indexView.frame.size.width, self.indexView.frame.size.height);
         self.firstView.transform = CGAffineTransformMakeTranslation(-[UIScreen mainScreen].bounds.size.width, 0);
         self.contentView.transform = CGAffineTransformMakeTranslation(-[UIScreen mainScreen].bounds.size.width, 0);
-//        self.descView.transform = CGAffineTransformMakeTranslation(-[UIScreen mainScreen].bounds.size.width, 0);
     }];
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(searchClick)];
 }
 -(void)danweiBtnClick:(UIButton *)btn{
-    testTableViewController *tVC = [[testTableViewController alloc] init];
-    [self.navigationController pushViewController:tVC animated:YES];
+    switch (btn.tag) {
+        case 0:{
+            lengthTableViewController *lVC = [[lengthTableViewController alloc] init];
+            lVC.fileName = @"length.plist";
+            lVC.titleName = @"长度转换";
+            [self.navigationController pushViewController:lVC animated:YES];
+        }
+            break;
+        case 1:{
+            testTableViewController *tVC = [[testTableViewController alloc] init];
+            [self.navigationController pushViewController:tVC animated:YES];
+        }
+            break;
+        case 2:{
+            testTableViewController *tVC = [[testTableViewController alloc] init];
+            [self.navigationController pushViewController:tVC animated:YES];
+        }
+            break;
+        case 3:{
+            testTableViewController *tVC = [[testTableViewController alloc] init];
+            [self.navigationController pushViewController:tVC animated:YES];
+        }
+            break;
+    }
     
 }
 -(void)close{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 -(void)searchClick{
-    
+    self.down = 34;
     [UIView animateWithDuration:0.2 animations:^{
         self.contentView.transform = CGAffineTransformMakeTranslation(-self.view.frame.size.width, 34);
     }];
     [self.searchBar becomeFirstResponder];
 }
 
-+(void)initialize{
-    UIBarButtonItem *item = [UIBarButtonItem appearance];
-    item.tintColor = [UIColor blackColor];
-}
+//+(void)initialize{
+//    UIBarButtonItem *item = [UIBarButtonItem appearance];
+//    item.tintColor = [UIColor blackColor];
+//    
+//}
 #pragma mark - tableViewDS
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -216,8 +255,12 @@
 }
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
+    if (searchText.length) {
+        self.searchTextEmpty = NO;
+    }else{
+        self.searchTextEmpty = YES;
+    }
     [self.midus removeAllObjects];
-    
     NSString *sql = [NSString stringWithFormat:@"SELECT name,value FROM midu WHERE name LIKE '%%%@%%';", searchText];
     // stmt是用来取出查询结果的
     sqlite3_stmt *stmt = NULL;
@@ -234,15 +277,20 @@
             [self.midus addObject:mm];
         }
     }
-    
     [self.secondView reloadData];
 }
 
 -(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
-    [self.searchBar endEditing:YES];
-    [UIView animateWithDuration:0.2 animations:^{
-        self.contentView.transform = CGAffineTransformMakeTranslation(-self.view.frame.size.width, 0);
-    }];
+    if (self.searchTextEmpty) {
+        [self.searchBar endEditing:YES];
+        [UIView animateWithDuration:0.2 animations:^{
+            self.contentView.transform = CGAffineTransformMakeTranslation(-self.view.frame.size.width, 0);
+        }];
+    }
+}
+-(BOOL)searchBarShouldEndEditing:(UISearchBar *)searchBar{
+    self.down = 0;
+    return YES;
 }
 
 

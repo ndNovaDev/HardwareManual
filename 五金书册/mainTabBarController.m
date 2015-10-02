@@ -42,8 +42,8 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-+(void)initialize{
-    UIBarButtonItem *item = [UIBarButtonItem appearance];
-    item.tintColor = [UIColor blackColor];
-}
+//+(void)initialize{
+//    UIBarButtonItem *item = [UIBarButtonItem appearance];
+//    item.tintColor = [UIColor blackColor];
+//}
 @end
