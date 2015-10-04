@@ -34,6 +34,13 @@
 		987D3DD21BBEB0F100F291CA /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 987D3DC71BBEB0F100F291CA /* NSString+MJExtension.m */; settings = {ASSET_TAGS = (); }; };
 		987D3DD61BBEC95900F291CA /* TKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 987D3DD41BBEC95900F291CA /* TKeyBoardView.m */; settings = {ASSET_TAGS = (); }; };
 		987D3DD71BBEC95900F291CA /* TKeyBoardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 987D3DD51BBEC95900F291CA /* TKeyBoardView.xib */; settings = {ASSET_TAGS = (); }; };
+		9891AD301BC0D85D006D1D4C /* xinggang.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9891AD2F1BC0D85D006D1D4C /* xinggang.plist */; settings = {ASSET_TAGS = (); }; };
+		9891AD331BC0E0AA006D1D4C /* xinggangModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9891AD321BC0E0AA006D1D4C /* xinggangModel.m */; settings = {ASSET_TAGS = (); }; };
+		9891AD361BC0E0C4006D1D4C /* xinggangcanshuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9891AD351BC0E0C4006D1D4C /* xinggangcanshuModel.m */; settings = {ASSET_TAGS = (); }; };
+		9891AD391BC0ECE5006D1D4C /* xinggangcanshuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9891AD381BC0ECE5006D1D4C /* xinggangcanshuTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9891AD3C1BC0FE15006D1D4C /* xinggangTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9891AD3B1BC0FE15006D1D4C /* xinggangTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		9891AD3F1BC1509F006D1D4C /* frameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9891AD3E1BC1509F006D1D4C /* frameModel.m */; settings = {ASSET_TAGS = (); }; };
+		9891AD421BC17F02006D1D4C /* danweiHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9891AD411BC17F02006D1D4C /* danweiHeaderView.m */; settings = {ASSET_TAGS = (); }; };
 		98C72F451BBC26B400C829B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C72F441BBC26B400C829B4 /* main.m */; };
 		98C72F531BBC26B400C829B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C72F511BBC26B400C829B4 /* LaunchScreen.storyboard */; };
 		98C72F5E1BBC26B400C829B4 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C72F5D1BBC26B400C829B4 /* ____Tests.m */; };
@@ -117,6 +124,19 @@
 		987D3DD31BBEC95900F291CA /* TKeyBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKeyBoardView.h; sourceTree = "<group>"; };
 		987D3DD41BBEC95900F291CA /* TKeyBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKeyBoardView.m; sourceTree = "<group>"; };
 		987D3DD51BBEC95900F291CA /* TKeyBoardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TKeyBoardView.xib; sourceTree = "<group>"; };
+		9891AD2F1BC0D85D006D1D4C /* xinggang.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = xinggang.plist; sourceTree = "<group>"; };
+		9891AD311BC0E0AA006D1D4C /* xinggangModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xinggangModel.h; sourceTree = "<group>"; };
+		9891AD321BC0E0AA006D1D4C /* xinggangModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xinggangModel.m; sourceTree = "<group>"; };
+		9891AD341BC0E0C4006D1D4C /* xinggangcanshuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xinggangcanshuModel.h; sourceTree = "<group>"; };
+		9891AD351BC0E0C4006D1D4C /* xinggangcanshuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xinggangcanshuModel.m; sourceTree = "<group>"; };
+		9891AD371BC0ECE5006D1D4C /* xinggangcanshuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xinggangcanshuTableViewController.h; sourceTree = "<group>"; };
+		9891AD381BC0ECE5006D1D4C /* xinggangcanshuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xinggangcanshuTableViewController.m; sourceTree = "<group>"; };
+		9891AD3A1BC0FE15006D1D4C /* xinggangTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xinggangTableViewCell.h; sourceTree = "<group>"; };
+		9891AD3B1BC0FE15006D1D4C /* xinggangTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xinggangTableViewCell.m; sourceTree = "<group>"; };
+		9891AD3D1BC1509F006D1D4C /* frameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frameModel.h; sourceTree = "<group>"; };
+		9891AD3E1BC1509F006D1D4C /* frameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = frameModel.m; sourceTree = "<group>"; };
+		9891AD401BC17F02006D1D4C /* danweiHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = danweiHeaderView.h; sourceTree = "<group>"; };
+		9891AD411BC17F02006D1D4C /* danweiHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = danweiHeaderView.m; sourceTree = "<group>"; };
 		98C72F401BBC26B400C829B4 /* 五金书册.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "五金书册.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C72F441BBC26B400C829B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98C72F521BBC26B400C829B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -239,7 +259,6 @@
 				98C72F781BBC274800C829B4 /* 钢板 */,
 				98C72F771BBC274000C829B4 /* 钢管 */,
 				98C72F761BBC273700C829B4 /* 收藏 */,
-				98C72F511BBC26B400C829B4 /* LaunchScreen.storyboard */,
 				98C72F7F1BBC27B600C829B4 /* Assets.xcassets */,
 				98C72F541BBC26B400C829B4 /* Info.plist */,
 				98C72F431BBC26B400C829B4 /* Supporting Files */,
@@ -258,6 +277,7 @@
 				9815E8D11BBFFFA500BFC351 /* mianji.plist */,
 				9815E8D31BC001AC00BFC351 /* tiji.plist */,
 				9815E8D51BC0049900BFC351 /* zhiliang.plist */,
+				9891AD2F1BC0D85D006D1D4C /* xinggang.plist */,
 				98C72F441BBC26B400C829B4 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -321,6 +341,19 @@
 				98C72F981BBC284700C829B4 /* xinggangNaviController.m */,
 				98C72F991BBC284700C829B4 /* xinggangTableViewController.h */,
 				98C72F9A1BBC284700C829B4 /* xinggangTableViewController.m */,
+				9891AD371BC0ECE5006D1D4C /* xinggangcanshuTableViewController.h */,
+				9891AD381BC0ECE5006D1D4C /* xinggangcanshuTableViewController.m */,
+				9891AD3A1BC0FE15006D1D4C /* xinggangTableViewCell.h */,
+				9891AD3B1BC0FE15006D1D4C /* xinggangTableViewCell.m */,
+				9891AD311BC0E0AA006D1D4C /* xinggangModel.h */,
+				9891AD321BC0E0AA006D1D4C /* xinggangModel.m */,
+				9891AD341BC0E0C4006D1D4C /* xinggangcanshuModel.h */,
+				9891AD351BC0E0C4006D1D4C /* xinggangcanshuModel.m */,
+				98C72F511BBC26B400C829B4 /* LaunchScreen.storyboard */,
+				9891AD3D1BC1509F006D1D4C /* frameModel.h */,
+				9891AD3E1BC1509F006D1D4C /* frameModel.m */,
+				9891AD401BC17F02006D1D4C /* danweiHeaderView.h */,
+				9891AD411BC17F02006D1D4C /* danweiHeaderView.m */,
 			);
 			name = "型钢";
 			sourceTree = "<group>";
@@ -492,6 +525,7 @@
 				9815E8D21BBFFFA500BFC351 /* mianji.plist in Resources */,
 				982055E21BBD6AEB00FB1C4D /* midu.sqlite in Resources */,
 				9815E8D41BC001AC00BFC351 /* tiji.plist in Resources */,
+				9891AD301BC0D85D006D1D4C /* xinggang.plist in Resources */,
 				98C72F531BBC26B400C829B4 /* LaunchScreen.storyboard in Resources */,
 				987D3DD71BBEC95900F291CA /* TKeyBoardView.xib in Resources */,
 				9815E8D61BC0049900BFC351 /* zhiliang.plist in Resources */,
@@ -520,6 +554,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9891AD3C1BC0FE15006D1D4C /* xinggangTableViewCell.m in Sources */,
 				98C72FA11BBC285C00C829B4 /* navigationItemButton.m in Sources */,
 				98C72F901BBC282500C829B4 /* gangguanTableViewController.m in Sources */,
 				9844D3291BBD1151008E0883 /* mainVIewController.m in Sources */,
@@ -530,14 +565,18 @@
 				987D3DCC1BBEB0F100F291CA /* MJPropertyKey.m in Sources */,
 				987D3DAA1BBEA6B100F291CA /* lengthTableViewController.m in Sources */,
 				987D3DCD1BBEB0F100F291CA /* MJPropertyType.m in Sources */,
+				9891AD391BC0ECE5006D1D4C /* xinggangcanshuTableViewController.m in Sources */,
 				987D3DD61BBEC95900F291CA /* TKeyBoardView.m in Sources */,
 				982055E51BBD6C1000FB1C4D /* miduModel.m in Sources */,
 				98C72F8F1BBC282500C829B4 /* gangguanNaviController.m in Sources */,
+				9891AD361BC0E0C4006D1D4C /* xinggangcanshuModel.m in Sources */,
 				98C72F451BBC26B400C829B4 /* main.m in Sources */,
+				9891AD331BC0E0AA006D1D4C /* xinggangModel.m in Sources */,
 				987D3DD01BBEB0F100F291CA /* NSObject+MJKeyValue.m in Sources */,
 				98C72F9B1BBC284700C829B4 /* xinggangNaviController.m in Sources */,
 				98C72F8A1BBC281800C829B4 /* gangbanTableViewController.m in Sources */,
 				987D3DD21BBEB0F100F291CA /* NSString+MJExtension.m in Sources */,
+				9891AD421BC17F02006D1D4C /* danweiHeaderView.m in Sources */,
 				982055DC1BBD417800FB1C4D /* testTableViewController.m in Sources */,
 				98C72F9C1BBC284700C829B4 /* xinggangTableViewController.m in Sources */,
 				987D3DCA1BBEB0F100F291CA /* MJFoundation.m in Sources */,
@@ -551,6 +590,7 @@
 				982055D91BBD3D5600FB1C4D /* danweizhuanhuanButton.m in Sources */,
 				987D3DCE1BBEB0F100F291CA /* NSObject+MJClass.m in Sources */,
 				987D3DCB1BBEB0F100F291CA /* MJProperty.m in Sources */,
+				9891AD3F1BC1509F006D1D4C /* frameModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

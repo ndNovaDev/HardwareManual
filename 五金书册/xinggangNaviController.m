@@ -16,8 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    xinggangTableViewController *xinggangTVC = [[xinggangTableViewController alloc] initWithStyle:UITableViewStylePlain];
+//    xinggangTableViewController *xinggangTVC = [[xinggangTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    xinggangTableViewController *xinggangTVC = [[xinggangTableViewController alloc] initWithStyle:UITableViewStylePlain titleName:@"型钢"];
     self.viewControllers = @[xinggangTVC];
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {

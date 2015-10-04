@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface xinggangTableViewController : UITableViewController
-
+-(instancetype)initWithStyle:(UITableViewStyle)style titleName:(NSString *)titleName;
 @end

@@ -296,10 +296,18 @@
         }];
     }
 }
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+
+    self.navigationItem.rightBarButtonItem.enabled = NO;
+}
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    self.navigationItem.rightBarButtonItem.enabled = YES;
+}
 -(BOOL)searchBarShouldEndEditing:(UISearchBar *)searchBar{
     self.down = 0;
     return YES;
 }
+
 
 
 @end
