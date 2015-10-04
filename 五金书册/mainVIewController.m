@@ -13,7 +13,7 @@
 #import "miduModel.h"
 #import "lengthTableViewController.h"
 
-@interface mainVIewController()<UITableViewDataSource,UISearchBarDelegate,UIScrollViewDelegate>
+@interface mainVIewController()<UITableViewDataSource,UISearchBarDelegate,UIScrollViewDelegate,UITableViewDelegate>
 @property (nonatomic,strong)UIView *indexView;
 @property (nonatomic,strong)UIView *firstView;
 @property (nonatomic,strong)UITableView *secondView;
@@ -112,8 +112,10 @@
     CGFloat outMargin = self.view.frame.size.width * 0.2;
     CGFloat inMagin = self.view.frame.size.width * 0.1;
     CGFloat btnSize = self.view.frame.size.width * 0.25;
+    NSArray *btnName = @[@"长度",@"面积",@"体积",@"质量"];
     for (int i = 0; i < 4; i++) {
-        danweizhuanhuanButton *btn = [[danweizhuanhuanButton alloc] initWithImage:[UIImage imageNamed:@"tabbar_xingang"] highlightImage:[UIImage imageNamed:@"tabbar_xingang_selected"] title:@"midu" frame:CGRectMake(i % 2 * (inMagin + btnSize) + outMargin, outMargin + (inMagin + btnSize) * (i / 2), btnSize, btnSize)];
+        danweizhuanhuanButton *btn = [[danweizhuanhuanButton alloc] initWithImage:[UIImage imageNamed:@"tabbar_xingang"] highlightImage:[UIImage imageNamed:@"tabbar_xingang_selected"] title:nil frame:CGRectMake(i % 2 * (inMagin + btnSize) + outMargin, outMargin + (inMagin + btnSize) * (i / 2), btnSize, btnSize)];
+        [btn setTitle:btnName[i] forState:UIControlStateNormal];
         btn.tag = i;
         [btn addTarget:self action:@selector(danweiBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [self.firstView addSubview:btn];
@@ -155,25 +157,31 @@
 -(void)danweiBtnClick:(UIButton *)btn{
     switch (btn.tag) {
         case 0:{
-            lengthTableViewController *lVC = [[lengthTableViewController alloc] init];
+            lengthTableViewController *lVC = [[lengthTableViewController alloc] initWithName:@"米"];
             lVC.fileName = @"length.plist";
             lVC.titleName = @"长度转换";
             [self.navigationController pushViewController:lVC animated:YES];
         }
             break;
         case 1:{
-            testTableViewController *tVC = [[testTableViewController alloc] init];
-            [self.navigationController pushViewController:tVC animated:YES];
+            lengthTableViewController *lVC = [[lengthTableViewController alloc] initWithName:@"平方米"];
+            lVC.fileName = @"mianji.plist";
+            lVC.titleName = @"面积转换";
+            [self.navigationController pushViewController:lVC animated:YES];
         }
             break;
         case 2:{
-            testTableViewController *tVC = [[testTableViewController alloc] init];
-            [self.navigationController pushViewController:tVC animated:YES];
+            lengthTableViewController *lVC = [[lengthTableViewController alloc] initWithName:@"立方米"];
+            lVC.fileName = @"tiji.plist";
+            lVC.titleName = @"体积转换";
+            [self.navigationController pushViewController:lVC animated:YES];
         }
             break;
         case 3:{
-            testTableViewController *tVC = [[testTableViewController alloc] init];
-            [self.navigationController pushViewController:tVC animated:YES];
+            lengthTableViewController *lVC = [[lengthTableViewController alloc] initWithName:@"千克"];
+            lVC.fileName = @"zhiliang.plist";
+            lVC.titleName = @"质量转换";
+            [self.navigationController pushViewController:lVC animated:YES];
         }
             break;
     }

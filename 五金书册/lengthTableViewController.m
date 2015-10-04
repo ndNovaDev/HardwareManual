@@ -10,10 +10,13 @@
 #import "MJExtension.h"
 #import "zhuanhuanModel.h"
 #import "TKeyBoardView.h"
-@interface lengthTableViewController ()<UITextFieldDelegate>
+//#import "zhuanhuanTableViewCell.h"
+@interface lengthTableViewController ()<UITextFieldDelegate,UIScrollViewDelegate>
 @property (nonatomic,strong)NSArray *names;
 @property (nonatomic,strong)UILabel *label;
 @property (nonatomic,strong)UITextField *textField;
+@property (nonatomic,copy)NSString *name;
+@property (nonatomic,assign)double value;
 @end
 
 @implementation lengthTableViewController
@@ -26,8 +29,15 @@
     }
     return _names;
 }
+-(instancetype)initWithName:(NSString *)name{
+    if (self = [super init]) {
+        self.name = name;
+    }
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.value = 1;
     self.tableView.showsVerticalScrollIndicator = NO;
     self.title = self.titleName;
     self.tableView.rowHeight = 44;
@@ -35,8 +45,8 @@
     view.backgroundColor = [UIColor colorWithRed:248/255.0 green:248/255.0 blue:248/255.0 alpha:1];
     self.tableView.tableHeaderView = view;
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 0, self.view.frame.size.width * 0.25 - 20, 64)];
-    label.text = @"米";
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 0, self.view.frame.size.width * 0.5 - 20, 64)];
+    label.text = self.name;
     label.textAlignment = NSTextAlignmentLeft;
     
     label.font = [UIFont systemFontOfSize:26];
@@ -63,40 +73,44 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *ID = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    zhuanhuanTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:ID];
+        cell = [[zhuanhuanTableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:ID];
     }
     zhuanhuanModel *zm = self.names[indexPath.row];
-    cell.textLabel.text = zm.name;
-    cell.detailTextLabel.text = zm.value;
+    cell.zm = zm;
+    cell.name = self.name;
+    cell.value = self.value;
+    cell.NVs = self.names;
     return cell;
-}
--(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 30)];
-    view.backgroundColor = [UIColor redColor];
-    return view;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    zhuanhuanTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    self.label.text = cell.zm.name;
+    self.name = cell.zm.name;
+    [self.tableView reloadData];
     [self.textField endEditing:YES];
 }
 -(void)textFiledValueChanged:(UITextField *)textField{
+    self.value = [textField.text intValue];
+    [self.tableView reloadData];
     
 }
 -(BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
     if (textField == self.textField) {
         if (string.length == 0) return YES;
-        
         NSInteger existedLength = textField.text.length;
         NSInteger selectedLength = range.length;
         NSInteger replaceLength = string.length;
-        if (existedLength - selectedLength + replaceLength > 20) {
+        if (existedLength - selectedLength + replaceLength > 9) {
             return NO;
         }
     }
     
     return YES;
 }
-
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    [self.textField endEditing:YES];
+}
 @end

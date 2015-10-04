@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "zhuanhuanTableViewCell.h"
 @interface lengthTableViewController : UITableViewController
 @property (nonatomic,copy)NSString *fileName;
 @property (nonatomic,copy)NSString *titleName;
+-(instancetype)initWithName:(NSString *)name;
 @end

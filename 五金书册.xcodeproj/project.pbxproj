@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9815E8D01BBFE71F00BFC351 /* zhuanhuanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9815E8CF1BBFE71F00BFC351 /* zhuanhuanTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		9815E8D21BBFFFA500BFC351 /* mianji.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9815E8D11BBFFFA500BFC351 /* mianji.plist */; settings = {ASSET_TAGS = (); }; };
+		9815E8D41BC001AC00BFC351 /* tiji.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9815E8D31BC001AC00BFC351 /* tiji.plist */; settings = {ASSET_TAGS = (); }; };
+		9815E8D61BC0049900BFC351 /* zhiliang.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9815E8D51BC0049900BFC351 /* zhiliang.plist */; settings = {ASSET_TAGS = (); }; };
 		982055D91BBD3D5600FB1C4D /* danweizhuanhuanButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 982055D81BBD3D5600FB1C4D /* danweizhuanhuanButton.m */; settings = {ASSET_TAGS = (); }; };
 		982055DC1BBD417800FB1C4D /* testTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982055DB1BBD417800FB1C4D /* testTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		982055DE1BBD4E7A00FB1C4D /* midu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 982055DD1BBD4E7A00FB1C4D /* midu.plist */; settings = {ASSET_TAGS = (); }; };
@@ -66,6 +70,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9815E8CE1BBFE71F00BFC351 /* zhuanhuanTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhuanhuanTableViewCell.h; sourceTree = "<group>"; };
+		9815E8CF1BBFE71F00BFC351 /* zhuanhuanTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhuanhuanTableViewCell.m; sourceTree = "<group>"; };
+		9815E8D11BBFFFA500BFC351 /* mianji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mianji.plist; sourceTree = "<group>"; };
+		9815E8D31BC001AC00BFC351 /* tiji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tiji.plist; sourceTree = "<group>"; };
+		9815E8D51BC0049900BFC351 /* zhiliang.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = zhiliang.plist; sourceTree = "<group>"; };
 		982055D71BBD3D5600FB1C4D /* danweizhuanhuanButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = danweizhuanhuanButton.h; sourceTree = "<group>"; };
 		982055D81BBD3D5600FB1C4D /* danweizhuanhuanButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = danweizhuanhuanButton.m; sourceTree = "<group>"; };
 		982055DA1BBD417800FB1C4D /* testTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testTableViewController.h; sourceTree = "<group>"; };
@@ -233,8 +242,6 @@
 				98C72F511BBC26B400C829B4 /* LaunchScreen.storyboard */,
 				98C72F7F1BBC27B600C829B4 /* Assets.xcassets */,
 				98C72F541BBC26B400C829B4 /* Info.plist */,
-				982055DD1BBD4E7A00FB1C4D /* midu.plist */,
-				987D3DAB1BBEAD5500F291CA /* length.plist */,
 				98C72F431BBC26B400C829B4 /* Supporting Files */,
 				982055DA1BBD417800FB1C4D /* testTableViewController.h */,
 				982055DB1BBD417800FB1C4D /* testTableViewController.m */,
@@ -246,6 +253,11 @@
 			isa = PBXGroup;
 			children = (
 				982055E11BBD6AEB00FB1C4D /* midu.sqlite */,
+				982055DD1BBD4E7A00FB1C4D /* midu.plist */,
+				987D3DAB1BBEAD5500F291CA /* length.plist */,
+				9815E8D11BBFFFA500BFC351 /* mianji.plist */,
+				9815E8D31BC001AC00BFC351 /* tiji.plist */,
+				9815E8D51BC0049900BFC351 /* zhiliang.plist */,
 				98C72F441BBC26B400C829B4 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -357,6 +369,8 @@
 				987D3DD31BBEC95900F291CA /* TKeyBoardView.h */,
 				987D3DD41BBEC95900F291CA /* TKeyBoardView.m */,
 				987D3DD51BBEC95900F291CA /* TKeyBoardView.xib */,
+				9815E8CE1BBFE71F00BFC351 /* zhuanhuanTableViewCell.h */,
+				9815E8CF1BBFE71F00BFC351 /* zhuanhuanTableViewCell.m */,
 			);
 			name = toolVIew;
 			sourceTree = "<group>";
@@ -475,9 +489,12 @@
 			files = (
 				982055DE1BBD4E7A00FB1C4D /* midu.plist in Resources */,
 				98C72F811BBC27B600C829B4 /* Assets.xcassets in Resources */,
+				9815E8D21BBFFFA500BFC351 /* mianji.plist in Resources */,
 				982055E21BBD6AEB00FB1C4D /* midu.sqlite in Resources */,
+				9815E8D41BC001AC00BFC351 /* tiji.plist in Resources */,
 				98C72F531BBC26B400C829B4 /* LaunchScreen.storyboard in Resources */,
 				987D3DD71BBEC95900F291CA /* TKeyBoardView.xib in Resources */,
+				9815E8D61BC0049900BFC351 /* zhiliang.plist in Resources */,
 				987D3DAC1BBEAD5500F291CA /* length.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,6 +547,7 @@
 				98C72F951BBC283000C829B4 /* loveNaviController.m in Sources */,
 				987D3DD11BBEB0F100F291CA /* NSObject+MJProperty.m in Sources */,
 				987D3DC81BBEB0F100F291CA /* MJDictionaryCache.m in Sources */,
+				9815E8D01BBFE71F00BFC351 /* zhuanhuanTableViewCell.m in Sources */,
 				982055D91BBD3D5600FB1C4D /* danweizhuanhuanButton.m in Sources */,
 				987D3DCE1BBEB0F100F291CA /* NSObject+MJClass.m in Sources */,
 				987D3DCB1BBEB0F100F291CA /* MJProperty.m in Sources */,

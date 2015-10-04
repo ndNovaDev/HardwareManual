@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>磅</string>
+		<key>value</key>
+		<string>2.205</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>盎司</string>
+		<key>value</key>
+		<string>35.2739619</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>吨</string>
+		<key>value</key>
+		<string>0.001</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>千克</string>
+		<key>value</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>克</string>
+		<key>value</key>
+		<string>1000</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>克拉</string>
+		<key>value</key>
+		<string>5000</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>毫克</string>
+		<key>value</key>
+		<string>1000000</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>市斤</string>
+		<key>value</key>
+		<string>2</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>市两</string>
+		<key>value</key>
+		<string>20</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>市钱</string>
+		<key>value</key>
+		<string>200</string>
+	</dict>
+</array>
+</plist>
