@@ -39,6 +39,7 @@
 		987D3DD21BBEB0F100F291CA /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 987D3DC71BBEB0F100F291CA /* NSString+MJExtension.m */; settings = {ASSET_TAGS = (); }; };
 		987D3DD61BBEC95900F291CA /* TKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 987D3DD41BBEC95900F291CA /* TKeyBoardView.m */; settings = {ASSET_TAGS = (); }; };
 		987D3DD71BBEC95900F291CA /* TKeyBoardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 987D3DD51BBEC95900F291CA /* TKeyBoardView.xib */; settings = {ASSET_TAGS = (); }; };
+		9886B9331BC2C1D200B175ED /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9886B9321BC2C1D200B175ED /* testViewController.m */; settings = {ASSET_TAGS = (); }; };
 		9891AD301BC0D85D006D1D4C /* xinggang.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9891AD2F1BC0D85D006D1D4C /* xinggang.plist */; settings = {ASSET_TAGS = (); }; };
 		9891AD331BC0E0AA006D1D4C /* xinggangModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9891AD321BC0E0AA006D1D4C /* xinggangModel.m */; settings = {ASSET_TAGS = (); }; };
 		9891AD361BC0E0C4006D1D4C /* xinggangcanshuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9891AD351BC0E0C4006D1D4C /* xinggangcanshuModel.m */; settings = {ASSET_TAGS = (); }; };
@@ -142,6 +143,8 @@
 		987D3DD31BBEC95900F291CA /* TKeyBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKeyBoardView.h; sourceTree = "<group>"; };
 		987D3DD41BBEC95900F291CA /* TKeyBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKeyBoardView.m; sourceTree = "<group>"; };
 		987D3DD51BBEC95900F291CA /* TKeyBoardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TKeyBoardView.xib; sourceTree = "<group>"; };
+		9886B9311BC2C1D200B175ED /* testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
+		9886B9321BC2C1D200B175ED /* testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
 		9891AD2F1BC0D85D006D1D4C /* xinggang.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = xinggang.plist; sourceTree = "<group>"; };
 		9891AD311BC0E0AA006D1D4C /* xinggangModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xinggangModel.h; sourceTree = "<group>"; };
 		9891AD321BC0E0AA006D1D4C /* xinggangModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xinggangModel.m; sourceTree = "<group>"; };
@@ -295,7 +298,7 @@
 				98C72F791BBC274E00C829B4 /* 型钢 */,
 				98C72F781BBC274800C829B4 /* 钢板 */,
 				98C72F771BBC274000C829B4 /* 钢管 */,
-				98C72F761BBC273700C829B4 /* 收藏 */,
+				98C72F761BBC273700C829B4 /* 关于 */,
 				98C72F7F1BBC27B600C829B4 /* Assets.xcassets */,
 				98C72F541BBC26B400C829B4 /* Info.plist */,
 				98C72F431BBC26B400C829B4 /* Supporting Files */,
@@ -337,15 +340,17 @@
 			path = "五金书册UITests";
 			sourceTree = "<group>";
 		};
-		98C72F761BBC273700C829B4 /* 收藏 */ = {
+		98C72F761BBC273700C829B4 /* 关于 */ = {
 			isa = PBXGroup;
 			children = (
 				98C72F911BBC283000C829B4 /* loveNaviController.h */,
 				98C72F921BBC283000C829B4 /* loveNaviController.m */,
+				9886B9311BC2C1D200B175ED /* testViewController.h */,
+				9886B9321BC2C1D200B175ED /* testViewController.m */,
 				98C72F931BBC283000C829B4 /* loveTableViewController.h */,
 				98C72F941BBC283000C829B4 /* loveTableViewController.m */,
 			);
-			name = "收藏";
+			name = "关于";
 			sourceTree = "<group>";
 		};
 		98C72F771BBC274000C829B4 /* 钢管 */ = {
@@ -629,6 +634,7 @@
 				987D3DD01BBEB0F100F291CA /* NSObject+MJKeyValue.m in Sources */,
 				98C72F9B1BBC284700C829B4 /* xinggangNaviController.m in Sources */,
 				987D3DD21BBEB0F100F291CA /* NSString+MJExtension.m in Sources */,
+				9886B9331BC2C1D200B175ED /* testViewController.m in Sources */,
 				9891AD421BC17F02006D1D4C /* danweiHeaderView.m in Sources */,
 				98B69BBE1BC23D540090F574 /* biangangView.m in Sources */,
 				98C72F9C1BBC284700C829B4 /* xinggangTableViewController.m in Sources */,

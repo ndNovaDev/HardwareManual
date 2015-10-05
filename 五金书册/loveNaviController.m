@@ -8,6 +8,7 @@
 
 #import "loveNaviController.h"
 #import "loveTableViewController.h"
+#import "testViewController.h"
 @interface loveNaviController ()
 
 @end
@@ -17,7 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     loveTableViewController *lTVC = [[loveTableViewController alloc] init];
-    self.viewControllers = @[lTVC];
+    testViewController *tVC = [[testViewController alloc] init];
+    self.viewControllers = @[tVC];
+//    self.viewControllers = @[lTVC];
 }
 
 - (void)didReceiveMemoryWarning {

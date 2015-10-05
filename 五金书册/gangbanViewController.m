@@ -30,7 +30,7 @@
     
     gangbanView *gangban = [[gangbanView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height * 0.5 - 64)];
     [self.view addSubview:gangban];
-    biangangView *biangang = [[biangangView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(gangban.frame), self.view.frame.size.width, self.view.frame.size.height * 0.5 - 44)];
+    biangangView *biangang = [[biangangView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(gangban.frame), self.view.frame.size.width, self.view.frame.size.height)];
     [self.view addSubview:biangang];
     
     

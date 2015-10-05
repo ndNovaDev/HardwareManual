@@ -38,10 +38,11 @@
         
         CGFloat labelWidth = (self.frame.size.width - 3 * margin) * 0.35;
         CGFloat fieldWidth = (self.frame.size.width - 3 * margin) * 0.65;
+        CGFloat height = frame.size.height * 0.5 - 74 - margin;
         
         UILabel *wLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, labelWidth, 30)];
         wLabel.textAlignment = NSTextAlignmentRight;
-        wLabel.center = CGPointMake(2 * margin + labelWidth * 0.5, (frame.size.height - 30 - margin) * 0.2 + ( 30 + margin));
+        wLabel.center = CGPointMake(2 * margin + labelWidth * 0.5, height * 0.2 + ( 30 + margin));
         wLabel.text = @"宽度(mm):";
         [self addSubview:wLabel];
         
@@ -55,7 +56,7 @@
         
         UILabel *dLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0,labelWidth, 30)];
         dLabel.textAlignment = NSTextAlignmentRight;
-        dLabel.center = CGPointMake(2 * margin + labelWidth * 0.5, (frame.size.height - 30 - margin) * 0.4 + ( 30 + margin));
+        dLabel.center = CGPointMake(2 * margin + labelWidth * 0.5, height * 0.4 + ( 30 + margin));
         dLabel.text = @"厚度(mm):";
         [self addSubview:dLabel];
         
@@ -68,7 +69,7 @@
         [self addSubview:dField];
         UILabel *pLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, labelWidth, 30)];
         pLabel.textAlignment = NSTextAlignmentRight;
-        pLabel.center = CGPointMake(2 * margin + labelWidth * 0.5, (frame.size.height - 30 - margin) * 0.6 + 30 + margin);
+        pLabel.center = CGPointMake(2 * margin + labelWidth * 0.5, height * 0.6 + 30 + margin);
         pLabel.text = @"密度(g/cm³):";
         [self addSubview:pLabel];
         UITextField *pField = [[UITextField alloc] initWithFrame:CGRectMake(CGRectGetMaxX(pLabel.frame), pLabel.frame.origin.y, fieldWidth, 30)];
@@ -80,7 +81,7 @@
         self.pField = pField;
         [self addSubview:pField];
         UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, frame.size.width * 0.25, 30)];
-        btn.center = CGPointMake(frame.size.width * 0.5, (frame.size.height - 30 - margin) * 0.8 + 30 + margin);
+        btn.center = CGPointMake(frame.size.width * 0.5, height * 0.8 + 30 + margin);
         btn.backgroundColor = [UIColor lightGrayColor];
         [btn setTitle:@"计算" forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
@@ -104,7 +105,7 @@
 }
 -(void)beginEdit{
     [UIView animateWithDuration:0.3 animations:^{
-        self.transform = CGAffineTransformMakeTranslation(0, -self.frame.size.height + 20);
+        self.transform = CGAffineTransformMakeTranslation(0, -self.frame.size.height * 0.5 + 64);
     }];
 }
 -(void)endEdit{

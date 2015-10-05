@@ -12,7 +12,7 @@
 @implementation loveTableViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"收藏";
+    self.title = @"关于";
     navigationItemButton *leftBtn = [navigationItemButton leftBtn];
     [leftBtn addTarget:self action:@selector(moreTool) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
