@@ -36,7 +36,7 @@
         [self deleteOneStringToTextField];
     }
     else {
-        str = [NSString stringWithFormat:@"%ld",sender.tag - 300];
+        str = [NSString stringWithFormat:@"%d",sender.tag - 300];
     }
     if (_keyDelegate != nil) {
         // 交给代理处理

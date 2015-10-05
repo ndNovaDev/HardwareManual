@@ -88,6 +88,11 @@
         self.label3.text = @"腹板厚度\nmm";
         self.label4.text = @"翼缘厚度\nmm";
         self.label5.text = @"单重\nkg/m";
+    }else if ([xm.fatherName isEqualToString:@"焊接钢管"] || [xm.fatherName isEqualToString:@"焊接钢管(加厚)"] ||[xm.fatherName isEqualToString:@"电线套管"]){
+        self.label1.text = @"公称口径\nmm";
+        self.label2.text = @"公称外径\nmm";
+        self.label3.text = @"壁厚\nmm";
+        self.label5.text = @"单重\nkg/m";
     }
     self.label1.frame = fm.lf1;
     self.label2.frame = fm.lf2;

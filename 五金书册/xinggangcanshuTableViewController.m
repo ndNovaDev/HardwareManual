@@ -11,9 +11,14 @@
 #import "xinggangTableViewCell.h"
 #import "frameModel.h"
 #import "danweiHeaderView.h"
+#import "navigationItemButton.h"
+#import "yuangangViewViewController.h"
+#import "fanggangViewController.h"
+#import "liujiaogangViewController.h"
 @interface xinggangcanshuTableViewController ()
 @property (nonatomic,strong)NSArray *canshus;
 @property (nonatomic,strong)frameModel *fm;
+
 @end
 
 @implementation xinggangcanshuTableViewController
@@ -33,8 +38,42 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.sectionHeaderHeight = 44;
+    self.tableView.tableFooterView = [[UIView alloc] init];
+//    if (self.needEdit) {
+//        
+//    }else{
+//        
+//    }
+    navigationItemButton *rightBtn = [navigationItemButton editBtn];
+    xinggangcanshuModel *xm = self.canshus.firstObject;
+    if ([xm.fatherName isEqualToString:@"圆钢"]) {
+        [rightBtn addTarget:self action:@selector(showYuangang) forControlEvents:UIControlEventTouchUpInside];
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
+    }else if ([xm.fatherName isEqualToString:@"方钢"]){
+        [rightBtn addTarget:self action:@selector(showFanggang) forControlEvents:UIControlEventTouchUpInside];
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
+    }else if ([xm.fatherName isEqualToString:@"六角钢"]){
+        [rightBtn addTarget:self action:@selector(showLiujiaogang) forControlEvents:UIControlEventTouchUpInside];
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
+    }else{
+        self.navigationItem.rightBarButtonItem = nil;
+    }
 }
-
+-(void)showYuangang{
+    yuangangViewViewController *yVC = [[yuangangViewViewController alloc] init];
+    UINavigationController *nVC = [[UINavigationController alloc]initWithRootViewController:yVC];
+    [self presentViewController:nVC animated:YES completion:nil];
+}
+-(void)showFanggang{
+    fanggangViewController *fVC = [[fanggangViewController alloc] init];
+    UINavigationController *nVC = [[UINavigationController alloc]initWithRootViewController:fVC];
+    [self presentViewController:nVC animated:YES completion:nil];
+}
+-(void)showLiujiaogang{
+    liujiaogangViewController *lVC = [[liujiaogangViewController alloc] init];
+    UINavigationController *nVC = [[UINavigationController alloc]initWithRootViewController:lVC];
+    [self presentViewController:nVC animated:YES completion:nil];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
@@ -60,13 +99,6 @@
     return cell;
 }
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-//    static NSString *viewID = @"head";
-//    UITableViewHeaderFooterView *headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:viewID];
-//    if (headerView == nil) {
-//        [tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:viewID];
-//        headerView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:viewID];
-//    }
-//    return headerView;
     danweiHeaderView *head = [[danweiHeaderView alloc] init];
     head.fm = self.fm;
     return head;

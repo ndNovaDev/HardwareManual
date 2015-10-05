@@ -12,12 +12,17 @@
 		9815E8D41BC001AC00BFC351 /* tiji.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9815E8D31BC001AC00BFC351 /* tiji.plist */; settings = {ASSET_TAGS = (); }; };
 		9815E8D61BC0049900BFC351 /* zhiliang.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9815E8D51BC0049900BFC351 /* zhiliang.plist */; settings = {ASSET_TAGS = (); }; };
 		982055D91BBD3D5600FB1C4D /* danweizhuanhuanButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 982055D81BBD3D5600FB1C4D /* danweizhuanhuanButton.m */; settings = {ASSET_TAGS = (); }; };
-		982055DC1BBD417800FB1C4D /* testTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982055DB1BBD417800FB1C4D /* testTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		982055DE1BBD4E7A00FB1C4D /* midu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 982055DD1BBD4E7A00FB1C4D /* midu.plist */; settings = {ASSET_TAGS = (); }; };
 		982055E21BBD6AEB00FB1C4D /* midu.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 982055E11BBD6AEB00FB1C4D /* midu.sqlite */; settings = {ASSET_TAGS = (); }; };
 		982055E51BBD6C1000FB1C4D /* miduModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 982055E41BBD6C1000FB1C4D /* miduModel.m */; settings = {ASSET_TAGS = (); }; };
 		982055E71BBD6DC800FB1C4D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 982055E61BBD6DC800FB1C4D /* libsqlite3.tbd */; };
 		9844D3291BBD1151008E0883 /* mainVIewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9844D3241BBD1151008E0883 /* mainVIewController.m */; settings = {ASSET_TAGS = (); }; };
+		984996841BC292150064B4FF /* MBProgressHUD+CZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 984996801BC292150064B4FF /* MBProgressHUD+CZ.m */; settings = {ASSET_TAGS = (); }; };
+		984996851BC292150064B4FF /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 984996811BC292150064B4FF /* MBProgressHUD.bundle */; settings = {ASSET_TAGS = (); }; };
+		984996861BC292150064B4FF /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 984996831BC292150064B4FF /* MBProgressHUD.m */; settings = {ASSET_TAGS = (); }; };
+		984996891BC298550064B4FF /* yuangangViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 984996881BC298550064B4FF /* yuangangViewViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9849968C1BC2985F0064B4FF /* fanggangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9849968B1BC2985F0064B4FF /* fanggangViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9849968F1BC2986A0064B4FF /* liujiaogangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9849968E1BC2986A0064B4FF /* liujiaogangViewController.m */; settings = {ASSET_TAGS = (); }; };
 		987D3DAA1BBEA6B100F291CA /* lengthTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987D3DA91BBEA6B100F291CA /* lengthTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		987D3DAC1BBEAD5500F291CA /* length.plist in Resources */ = {isa = PBXBuildFile; fileRef = 987D3DAB1BBEAD5500F291CA /* length.plist */; settings = {ASSET_TAGS = (); }; };
 		987D3DAF1BBEB0BE00F291CA /* zhuanhuanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 987D3DAE1BBEB0BE00F291CA /* zhuanhuanModel.m */; settings = {ASSET_TAGS = (); }; };
@@ -41,6 +46,11 @@
 		9891AD3C1BC0FE15006D1D4C /* xinggangTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9891AD3B1BC0FE15006D1D4C /* xinggangTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		9891AD3F1BC1509F006D1D4C /* frameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9891AD3E1BC1509F006D1D4C /* frameModel.m */; settings = {ASSET_TAGS = (); }; };
 		9891AD421BC17F02006D1D4C /* danweiHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9891AD411BC17F02006D1D4C /* danweiHeaderView.m */; settings = {ASSET_TAGS = (); }; };
+		98B69BB81BC23A230090F574 /* gangbanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B69BB71BC23A230090F574 /* gangbanViewController.m */; settings = {ASSET_TAGS = (); }; };
+		98B69BBB1BC23D480090F574 /* gangbanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B69BBA1BC23D480090F574 /* gangbanView.m */; settings = {ASSET_TAGS = (); }; };
+		98B69BBE1BC23D540090F574 /* biangangView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B69BBD1BC23D540090F574 /* biangangView.m */; settings = {ASSET_TAGS = (); }; };
+		98B69BC01BC271780090F574 /* gangguan.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98B69BBF1BC271780090F574 /* gangguan.plist */; settings = {ASSET_TAGS = (); }; };
+		98B69BC61BC27F3A0090F574 /* gangguanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B69BC51BC27F3A0090F574 /* gangguanViewController.m */; settings = {ASSET_TAGS = (); }; };
 		98C72F451BBC26B400C829B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C72F441BBC26B400C829B4 /* main.m */; };
 		98C72F531BBC26B400C829B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98C72F511BBC26B400C829B4 /* LaunchScreen.storyboard */; };
 		98C72F5E1BBC26B400C829B4 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C72F5D1BBC26B400C829B4 /* ____Tests.m */; };
@@ -49,7 +59,6 @@
 		98C72F811BBC27B600C829B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98C72F7F1BBC27B600C829B4 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 		98C72F841BBC27F600C829B4 /* mainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C72F831BBC27F600C829B4 /* mainTabBarController.m */; settings = {ASSET_TAGS = (); }; };
 		98C72F891BBC281800C829B4 /* gangbanNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C72F861BBC281800C829B4 /* gangbanNaviController.m */; settings = {ASSET_TAGS = (); }; };
-		98C72F8A1BBC281800C829B4 /* gangbanTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C72F881BBC281800C829B4 /* gangbanTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		98C72F8F1BBC282500C829B4 /* gangguanNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C72F8C1BBC282500C829B4 /* gangguanNaviController.m */; settings = {ASSET_TAGS = (); }; };
 		98C72F901BBC282500C829B4 /* gangguanTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C72F8E1BBC282500C829B4 /* gangguanTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		98C72F951BBC283000C829B4 /* loveNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C72F921BBC283000C829B4 /* loveNaviController.m */; settings = {ASSET_TAGS = (); }; };
@@ -84,8 +93,6 @@
 		9815E8D51BC0049900BFC351 /* zhiliang.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = zhiliang.plist; sourceTree = "<group>"; };
 		982055D71BBD3D5600FB1C4D /* danweizhuanhuanButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = danweizhuanhuanButton.h; sourceTree = "<group>"; };
 		982055D81BBD3D5600FB1C4D /* danweizhuanhuanButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = danweizhuanhuanButton.m; sourceTree = "<group>"; };
-		982055DA1BBD417800FB1C4D /* testTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testTableViewController.h; sourceTree = "<group>"; };
-		982055DB1BBD417800FB1C4D /* testTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testTableViewController.m; sourceTree = "<group>"; };
 		982055DD1BBD4E7A00FB1C4D /* midu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = midu.plist; sourceTree = "<group>"; };
 		982055E11BBD6AEB00FB1C4D /* midu.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = midu.sqlite; sourceTree = "<group>"; };
 		982055E31BBD6C1000FB1C4D /* miduModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = miduModel.h; sourceTree = "<group>"; };
@@ -93,6 +100,17 @@
 		982055E61BBD6DC800FB1C4D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		9844D3231BBD1151008E0883 /* mainVIewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainVIewController.h; sourceTree = "<group>"; };
 		9844D3241BBD1151008E0883 /* mainVIewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainVIewController.m; sourceTree = "<group>"; };
+		9849967F1BC292150064B4FF /* MBProgressHUD+CZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+CZ.h"; sourceTree = "<group>"; };
+		984996801BC292150064B4FF /* MBProgressHUD+CZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+CZ.m"; sourceTree = "<group>"; };
+		984996811BC292150064B4FF /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		984996821BC292150064B4FF /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		984996831BC292150064B4FF /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		984996871BC298550064B4FF /* yuangangViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yuangangViewViewController.h; sourceTree = "<group>"; };
+		984996881BC298550064B4FF /* yuangangViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yuangangViewViewController.m; sourceTree = "<group>"; };
+		9849968A1BC2985F0064B4FF /* fanggangViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fanggangViewController.h; sourceTree = "<group>"; };
+		9849968B1BC2985F0064B4FF /* fanggangViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fanggangViewController.m; sourceTree = "<group>"; };
+		9849968D1BC2986A0064B4FF /* liujiaogangViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = liujiaogangViewController.h; sourceTree = "<group>"; };
+		9849968E1BC2986A0064B4FF /* liujiaogangViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = liujiaogangViewController.m; sourceTree = "<group>"; };
 		987D3DA81BBEA6B100F291CA /* lengthTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lengthTableViewController.h; sourceTree = "<group>"; };
 		987D3DA91BBEA6B100F291CA /* lengthTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lengthTableViewController.m; sourceTree = "<group>"; };
 		987D3DAB1BBEAD5500F291CA /* length.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = length.plist; sourceTree = "<group>"; };
@@ -137,6 +155,15 @@
 		9891AD3E1BC1509F006D1D4C /* frameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = frameModel.m; sourceTree = "<group>"; };
 		9891AD401BC17F02006D1D4C /* danweiHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = danweiHeaderView.h; sourceTree = "<group>"; };
 		9891AD411BC17F02006D1D4C /* danweiHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = danweiHeaderView.m; sourceTree = "<group>"; };
+		98B69BB61BC23A230090F574 /* gangbanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gangbanViewController.h; sourceTree = "<group>"; };
+		98B69BB71BC23A230090F574 /* gangbanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gangbanViewController.m; sourceTree = "<group>"; };
+		98B69BB91BC23D480090F574 /* gangbanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gangbanView.h; sourceTree = "<group>"; };
+		98B69BBA1BC23D480090F574 /* gangbanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gangbanView.m; sourceTree = "<group>"; };
+		98B69BBC1BC23D540090F574 /* biangangView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = biangangView.h; sourceTree = "<group>"; };
+		98B69BBD1BC23D540090F574 /* biangangView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = biangangView.m; sourceTree = "<group>"; };
+		98B69BBF1BC271780090F574 /* gangguan.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = gangguan.plist; sourceTree = "<group>"; };
+		98B69BC41BC27F3A0090F574 /* gangguanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gangguanViewController.h; sourceTree = "<group>"; };
+		98B69BC51BC27F3A0090F574 /* gangguanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gangguanViewController.m; sourceTree = "<group>"; };
 		98C72F401BBC26B400C829B4 /* 五金书册.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "五金书册.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C72F441BBC26B400C829B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98C72F521BBC26B400C829B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -154,8 +181,6 @@
 		98C72F831BBC27F600C829B4 /* mainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainTabBarController.m; sourceTree = "<group>"; };
 		98C72F851BBC281800C829B4 /* gangbanNaviController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gangbanNaviController.h; sourceTree = "<group>"; };
 		98C72F861BBC281800C829B4 /* gangbanNaviController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gangbanNaviController.m; sourceTree = "<group>"; };
-		98C72F871BBC281800C829B4 /* gangbanTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gangbanTableViewController.h; sourceTree = "<group>"; };
-		98C72F881BBC281800C829B4 /* gangbanTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gangbanTableViewController.m; sourceTree = "<group>"; };
 		98C72F8B1BBC282500C829B4 /* gangguanNaviController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gangguanNaviController.h; sourceTree = "<group>"; };
 		98C72F8C1BBC282500C829B4 /* gangguanNaviController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gangguanNaviController.m; sourceTree = "<group>"; };
 		98C72F8D1BBC282500C829B4 /* gangguanTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gangguanTableViewController.h; sourceTree = "<group>"; };
@@ -198,6 +223,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9849967E1BC292150064B4FF /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				9849967F1BC292150064B4FF /* MBProgressHUD+CZ.h */,
+				984996801BC292150064B4FF /* MBProgressHUD+CZ.m */,
+				984996811BC292150064B4FF /* MBProgressHUD.bundle */,
+				984996821BC292150064B4FF /* MBProgressHUD.h */,
+				984996831BC292150064B4FF /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		987D3DB01BBEB0F100F291CA /* MJExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,8 +299,6 @@
 				98C72F7F1BBC27B600C829B4 /* Assets.xcassets */,
 				98C72F541BBC26B400C829B4 /* Info.plist */,
 				98C72F431BBC26B400C829B4 /* Supporting Files */,
-				982055DA1BBD417800FB1C4D /* testTableViewController.h */,
-				982055DB1BBD417800FB1C4D /* testTableViewController.m */,
 			);
 			path = "五金书册";
 			sourceTree = "<group>";
@@ -278,6 +313,7 @@
 				9815E8D31BC001AC00BFC351 /* tiji.plist */,
 				9815E8D51BC0049900BFC351 /* zhiliang.plist */,
 				9891AD2F1BC0D85D006D1D4C /* xinggang.plist */,
+				98B69BBF1BC271780090F574 /* gangguan.plist */,
 				98C72F441BBC26B400C829B4 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -319,6 +355,8 @@
 				98C72F8C1BBC282500C829B4 /* gangguanNaviController.m */,
 				98C72F8D1BBC282500C829B4 /* gangguanTableViewController.h */,
 				98C72F8E1BBC282500C829B4 /* gangguanTableViewController.m */,
+				98B69BC41BC27F3A0090F574 /* gangguanViewController.h */,
+				98B69BC51BC27F3A0090F574 /* gangguanViewController.m */,
 			);
 			name = "钢管";
 			sourceTree = "<group>";
@@ -328,8 +366,12 @@
 			children = (
 				98C72F851BBC281800C829B4 /* gangbanNaviController.h */,
 				98C72F861BBC281800C829B4 /* gangbanNaviController.m */,
-				98C72F871BBC281800C829B4 /* gangbanTableViewController.h */,
-				98C72F881BBC281800C829B4 /* gangbanTableViewController.m */,
+				98B69BB61BC23A230090F574 /* gangbanViewController.h */,
+				98B69BB71BC23A230090F574 /* gangbanViewController.m */,
+				98B69BB91BC23D480090F574 /* gangbanView.h */,
+				98B69BBA1BC23D480090F574 /* gangbanView.m */,
+				98B69BBC1BC23D540090F574 /* biangangView.h */,
+				98B69BBD1BC23D540090F574 /* biangangView.m */,
 			);
 			name = "钢板";
 			sourceTree = "<group>";
@@ -349,11 +391,16 @@
 				9891AD321BC0E0AA006D1D4C /* xinggangModel.m */,
 				9891AD341BC0E0C4006D1D4C /* xinggangcanshuModel.h */,
 				9891AD351BC0E0C4006D1D4C /* xinggangcanshuModel.m */,
-				98C72F511BBC26B400C829B4 /* LaunchScreen.storyboard */,
 				9891AD3D1BC1509F006D1D4C /* frameModel.h */,
 				9891AD3E1BC1509F006D1D4C /* frameModel.m */,
 				9891AD401BC17F02006D1D4C /* danweiHeaderView.h */,
 				9891AD411BC17F02006D1D4C /* danweiHeaderView.m */,
+				984996871BC298550064B4FF /* yuangangViewViewController.h */,
+				984996881BC298550064B4FF /* yuangangViewViewController.m */,
+				9849968A1BC2985F0064B4FF /* fanggangViewController.h */,
+				9849968B1BC2985F0064B4FF /* fanggangViewController.m */,
+				9849968D1BC2986A0064B4FF /* liujiaogangViewController.h */,
+				9849968E1BC2986A0064B4FF /* liujiaogangViewController.m */,
 			);
 			name = "型钢";
 			sourceTree = "<group>";
@@ -370,6 +417,7 @@
 		98C72F7B1BBC276400C829B4 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				98C72F511BBC26B400C829B4 /* LaunchScreen.storyboard */,
 				98C72F7D1BBC27B600C829B4 /* AppDelegate.h */,
 				98C72F7E1BBC27B600C829B4 /* AppDelegate.m */,
 				98C72F821BBC27F600C829B4 /* mainTabBarController.h */,
@@ -381,6 +429,7 @@
 		98C72F7C1BBC278300C829B4 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				9849967E1BC292150064B4FF /* MBProgressHUD */,
 				987D3DB01BBEB0F100F291CA /* MJExtension */,
 			);
 			name = lib;
@@ -399,9 +448,6 @@
 				987D3DA91BBEA6B100F291CA /* lengthTableViewController.m */,
 				987D3DAD1BBEB0BE00F291CA /* zhuanhuanModel.h */,
 				987D3DAE1BBEB0BE00F291CA /* zhuanhuanModel.m */,
-				987D3DD31BBEC95900F291CA /* TKeyBoardView.h */,
-				987D3DD41BBEC95900F291CA /* TKeyBoardView.m */,
-				987D3DD51BBEC95900F291CA /* TKeyBoardView.xib */,
 				9815E8CE1BBFE71F00BFC351 /* zhuanhuanTableViewCell.h */,
 				9815E8CF1BBFE71F00BFC351 /* zhuanhuanTableViewCell.m */,
 			);
@@ -413,6 +459,9 @@
 			children = (
 				98C72F9D1BBC285C00C829B4 /* navigationItemButton.h */,
 				98C72F9E1BBC285C00C829B4 /* navigationItemButton.m */,
+				987D3DD31BBEC95900F291CA /* TKeyBoardView.h */,
+				987D3DD41BBEC95900F291CA /* TKeyBoardView.m */,
+				987D3DD51BBEC95900F291CA /* TKeyBoardView.xib */,
 			);
 			name = other;
 			sourceTree = "<group>";
@@ -525,10 +574,12 @@
 				9815E8D21BBFFFA500BFC351 /* mianji.plist in Resources */,
 				982055E21BBD6AEB00FB1C4D /* midu.sqlite in Resources */,
 				9815E8D41BC001AC00BFC351 /* tiji.plist in Resources */,
+				984996851BC292150064B4FF /* MBProgressHUD.bundle in Resources */,
 				9891AD301BC0D85D006D1D4C /* xinggang.plist in Resources */,
 				98C72F531BBC26B400C829B4 /* LaunchScreen.storyboard in Resources */,
 				987D3DD71BBEC95900F291CA /* TKeyBoardView.xib in Resources */,
 				9815E8D61BC0049900BFC351 /* zhiliang.plist in Resources */,
+				98B69BC01BC271780090F574 /* gangguan.plist in Resources */,
 				987D3DAC1BBEAD5500F291CA /* length.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -565,20 +616,25 @@
 				987D3DCC1BBEB0F100F291CA /* MJPropertyKey.m in Sources */,
 				987D3DAA1BBEA6B100F291CA /* lengthTableViewController.m in Sources */,
 				987D3DCD1BBEB0F100F291CA /* MJPropertyType.m in Sources */,
+				9849968C1BC2985F0064B4FF /* fanggangViewController.m in Sources */,
 				9891AD391BC0ECE5006D1D4C /* xinggangcanshuTableViewController.m in Sources */,
 				987D3DD61BBEC95900F291CA /* TKeyBoardView.m in Sources */,
+				984996861BC292150064B4FF /* MBProgressHUD.m in Sources */,
 				982055E51BBD6C1000FB1C4D /* miduModel.m in Sources */,
 				98C72F8F1BBC282500C829B4 /* gangguanNaviController.m in Sources */,
 				9891AD361BC0E0C4006D1D4C /* xinggangcanshuModel.m in Sources */,
 				98C72F451BBC26B400C829B4 /* main.m in Sources */,
 				9891AD331BC0E0AA006D1D4C /* xinggangModel.m in Sources */,
+				98B69BC61BC27F3A0090F574 /* gangguanViewController.m in Sources */,
 				987D3DD01BBEB0F100F291CA /* NSObject+MJKeyValue.m in Sources */,
 				98C72F9B1BBC284700C829B4 /* xinggangNaviController.m in Sources */,
-				98C72F8A1BBC281800C829B4 /* gangbanTableViewController.m in Sources */,
 				987D3DD21BBEB0F100F291CA /* NSString+MJExtension.m in Sources */,
 				9891AD421BC17F02006D1D4C /* danweiHeaderView.m in Sources */,
-				982055DC1BBD417800FB1C4D /* testTableViewController.m in Sources */,
+				98B69BBE1BC23D540090F574 /* biangangView.m in Sources */,
 				98C72F9C1BBC284700C829B4 /* xinggangTableViewController.m in Sources */,
+				9849968F1BC2986A0064B4FF /* liujiaogangViewController.m in Sources */,
+				98B69BB81BC23A230090F574 /* gangbanViewController.m in Sources */,
+				984996891BC298550064B4FF /* yuangangViewViewController.m in Sources */,
 				987D3DCA1BBEB0F100F291CA /* MJFoundation.m in Sources */,
 				98C72F961BBC283000C829B4 /* loveTableViewController.m in Sources */,
 				987D3DC91BBEB0F100F291CA /* MJExtensionConst.m in Sources */,
@@ -590,7 +646,9 @@
 				982055D91BBD3D5600FB1C4D /* danweizhuanhuanButton.m in Sources */,
 				987D3DCE1BBEB0F100F291CA /* NSObject+MJClass.m in Sources */,
 				987D3DCB1BBEB0F100F291CA /* MJProperty.m in Sources */,
+				984996841BC292150064B4FF /* MBProgressHUD+CZ.m in Sources */,
 				9891AD3F1BC1509F006D1D4C /* frameModel.m in Sources */,
+				98B69BBB1BC23D480090F574 /* gangbanView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

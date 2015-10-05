@@ -22,10 +22,13 @@
     return self;
 }
 +(instancetype)leftBtn{
-    return [[self alloc] initWithImage:[UIImage imageNamed:@"tabbar_xingang"] highlightImage:[UIImage imageNamed:@"tabbar_xingang_selected"] title:@"常用资料"];
+    return [[self alloc] initWithImage:[UIImage imageNamed:@"tabbar_xingang"] highlightImage:[UIImage imageNamed:@"tabbar_xingang_selected"] title:@"常用工具"];
 }
 +(instancetype)rightBtn{
-    return [[self alloc] initWithImage:[UIImage imageNamed:@"tabbar_xingang"] highlightImage:[UIImage imageNamed:@"tabbar_xingang_selected"] title:@"小尺子"];
+    return [[self alloc] initWithImage:[UIImage imageNamed:@"tabbar_xingang"] highlightImage:[UIImage imageNamed:@"tabbar_xingang_selected"] title:@"尺子"];
+}
++(instancetype)editBtn{
+    return [[self alloc] initWithImage:[UIImage imageNamed:@"tabbar_xingang"] highlightImage:[UIImage imageNamed:@"tabbar_xingang_selected"] title:@"其他尺寸"];
 }
 -(void)layoutSubviews{
     CGSize titleSize = [self.titleLabel.text sizeWithAttributes:@{NSFontAttributeName:self.titleLabel.font}];

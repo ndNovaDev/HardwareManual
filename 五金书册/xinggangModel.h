@@ -12,4 +12,6 @@
 @property (nonatomic,assign)BOOL edit;
 @property (nonatomic,copy)NSString *name;
 @property (nonatomic,strong)NSArray *sub;
+/**标记是否为其他钢管*/
+@property (nonatomic,assign)BOOL other;
 @end

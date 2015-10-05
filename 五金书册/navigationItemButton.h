@@ -11,5 +11,5 @@
 @interface navigationItemButton : UIButton
 +(instancetype)leftBtn;
 +(instancetype)rightBtn;
-
++(instancetype)editBtn;
 @end

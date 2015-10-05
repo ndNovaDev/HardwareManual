@@ -29,4 +29,9 @@
 @property (nonatomic,copy)NSString *f;
 /**H型钢翼板厚度*/
 @property (nonatomic,copy)NSString *y;
+/**公称口径*/
+@property (nonatomic,copy)NSString *rr;
+/**公称外径*/
+@property (nonatomic,copy)NSString *r;
+
 @end

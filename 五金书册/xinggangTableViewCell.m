@@ -95,6 +95,11 @@
         self.label3.text = xm.f;
         self.label4.text = xm.y;
         self.label5.text = xm.G;
+    }else if ([xm.fatherName isEqualToString:@"焊接钢管"] || [xm.fatherName isEqualToString:@"焊接钢管(加厚)"] ||[xm.fatherName isEqualToString:@"电线套管"]){
+        self.label1.text = xm.rr;
+        self.label2.text = xm.r;
+        self.label3.text = xm.d;
+        self.label5.text = xm.G;
     }
     self.label1.frame = fm.lf1;
     self.label2.frame = fm.lf2;

@@ -28,7 +28,7 @@
     [self addNaviController:xgNC image:[UIImage imageNamed:@"tabbar_xingang"]selectImage:[[UIImage imageNamed:@"tabbar_xingang_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:@"型钢"];
     [self addNaviController:gbNC image:[UIImage imageNamed:@"tabbar_xingang"] selectImage:[[UIImage imageNamed:@"tabbar_xingang_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:@"钢板"];
     [self addNaviController:ggNC image:[UIImage imageNamed:@"tabbar_xingang"] selectImage:[[UIImage imageNamed:@"tabbar_xingang_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:@"钢管"];
-    [self addNaviController:lNC image:[UIImage imageNamed:@"tabbar_xingang"] selectImage:[[UIImage imageNamed:@"tabbar_xingang_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:@"收藏"];
+    [self addNaviController:lNC image:[UIImage imageNamed:@"tabbar_xingang"] selectImage:[[UIImage imageNamed:@"tabbar_xingang_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] title:@"关于"];
     
     
     

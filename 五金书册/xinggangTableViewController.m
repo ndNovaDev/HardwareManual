@@ -12,23 +12,25 @@
 #import "xinggangModel.h"
 #import "MJExtension.h"
 #import "xinggangcanshuTableViewController.h"
+#import "gangguanViewController.h"
 @interface xinggangTableViewController ()
 @property (nonatomic,strong)NSArray *names;
+@property (nonatomic,copy)NSString *filename;
+
 @end
 
 @implementation xinggangTableViewController
 -(NSArray *)names{
     if (!_names) {
-        NSArray *array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"xinggang.plist" ofType:nil]];
+        NSArray *array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:self.filename ofType:nil]];
         _names = [xinggangModel objectArrayWithKeyValuesArray:array];
     }
     return _names;
 }
--(instancetype)initWithStyle:(UITableViewStyle)style titleName:(NSString *)titleName{
+-(instancetype)initWithStyle:(UITableViewStyle)style titleName:(NSString *)titleName filename:(NSString *)filename{
     if (self = [super initWithStyle:style]) {
         self.title = titleName;
-//        self.tableView.scrollEnabled = NO;
-//        self.tableView.rowHeight = 54;
+        self.filename = filename;
     }
     return self;
 }
@@ -54,7 +56,6 @@
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
@@ -71,14 +72,21 @@
     xinggangModel *xm = self.names[indexPath.row];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.text = xm.name;
-    cell.detailTextLabel.text = @"sdf";
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     xinggangModel *xm = self.names[indexPath.row];
-    xinggangcanshuTableViewController *xcTVC = [[xinggangcanshuTableViewController alloc] initWithStyle:UITableViewStylePlain titleName:xm.name canshus:xm.sub];
-    xcTVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:xcTVC animated:YES];
-    
+    if (xm.other) {
+        gangguanViewController *gVC = [[gangguanViewController alloc] init];
+        gVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:gVC animated:YES];
+    }else{
+        xinggangcanshuTableViewController *xcTVC = [[xinggangcanshuTableViewController alloc] initWithStyle:UITableViewStylePlain titleName:xm.name canshus:xm.sub];
+        xcTVC.hidesBottomBarWhenPushed = YES;
+        if (xm.edit) {
+            xcTVC.needEdit = YES;
+        }
+        [self.navigationController pushViewController:xcTVC animated:YES];
+    }
 }
 @end

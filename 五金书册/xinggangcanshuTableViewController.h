@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface xinggangcanshuTableViewController : UITableViewController
+@property (nonatomic,assign)BOOL needEdit;
 -(instancetype)initWithStyle:(UITableViewStyle)style titleName:(NSString *)titleName canshus:(NSArray *)canshus;
 
 @end

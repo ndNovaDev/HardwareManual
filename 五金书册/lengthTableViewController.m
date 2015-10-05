@@ -37,6 +37,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tableView.tableFooterView = [[UIView alloc] init];
     self.value = 1;
     self.tableView.showsVerticalScrollIndicator = NO;
     self.title = self.titleName;

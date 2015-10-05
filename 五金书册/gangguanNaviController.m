@@ -7,7 +7,7 @@
 //
 
 #import "gangguanNaviController.h"
-#import "gangguanTableViewController.h"
+#import "xinggangTableViewController.h"
 @interface gangguanNaviController ()
 
 @end
@@ -16,8 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    gangguanTableViewController *ggTVC = [[gangguanTableViewController alloc] init];
-    self.viewControllers = @[ggTVC];
+    xinggangTableViewController *xinggangTVC = [[xinggangTableViewController alloc] initWithStyle:UITableViewStylePlain titleName:@"钢管" filename:@"gangguan.plist"];
+    self.viewControllers = @[xinggangTVC];
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,7 +7,7 @@
 //
 
 #import "gangbanNaviController.h"
-#import "gangbanTableViewController.h"
+#import "gangbanViewController.h"
 @interface gangbanNaviController ()
 
 @end
@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    gangbanTableViewController *gbTVC = [[gangbanTableViewController alloc] init];
-    self.viewControllers = @[gbTVC];
+    gangbanViewController *gVC = [[gangbanViewController alloc] init];
+    self.viewControllers = @[gVC];
 }
 
 - (void)didReceiveMemoryWarning {
